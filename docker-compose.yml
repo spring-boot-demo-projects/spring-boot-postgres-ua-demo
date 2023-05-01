@@ -1,0 +1,13 @@
+services:
+
+  demo-db-ua:
+    ports:
+      - "5432:5432"
+    image: postgres:14
+#    build: "./.docker/postgres-ua"
+    container_name: "demo-db-ua-container"
+    environment:
+      POSTGRES_DB: "demo-db-ua"
+      POSTGRES_USER: "demo-db-ua-username"
+      POSTGRES_PASSWORD: "demo-db-ua-password"
+#      POSTGRES_INITDB_ARGS: "--lc-collate=uk_UA.UTF-8 --lc-ctype=uk_UA.UTF-8"

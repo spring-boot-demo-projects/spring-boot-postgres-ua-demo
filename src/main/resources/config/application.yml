@@ -1,0 +1,15 @@
+### Server ###
+server:
+  port: 8080
+### Spring ###
+spring:
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    show-sql: on
+    open-in-view: off
+  datasource:
+    username: "demo-db-ua-username"
+    password: "demo-db-ua-password"
+    url: "jdbc:postgresql://localhost:5432/demo-db-ua"

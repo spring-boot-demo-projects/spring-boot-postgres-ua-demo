@@ -1,0 +1,13 @@
+### Spring ###
+spring:
+  test:
+    database:
+      replace: none
+  jpa:
+    show-sql: on
+    properties:
+      hibernate:
+        format_sql: on
+        highlight_sql: on
+        jdbc.time_zone: UTC
+
